@@ -125,6 +125,8 @@ public class MainController {
         ResultsTableController resultsTableController = tableFxmlLoader.getController();
         resultsTableController.initializeTable(loanSchedule, totalInterest);
         tableStage.setTitle(type + " paskolos įmokų lentelė");
+        tableStage.setMinWidth(500);
+        tableStage.setMinHeight(400);
         tableStage.setScene(tableScene);
         tableStage.show();
     }

@@ -30,7 +30,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Text text="Paskolos suma €:" textAlignment="CENTER" GridPane.valignment="BOTTOM">
+                  <Text text="Paskolos suma €: *" textAlignment="CENTER" GridPane.valignment="BOTTOM">
                      <GridPane.margin>
                         <Insets bottom="5.0" left="5.0" />
                      </GridPane.margin>
@@ -81,7 +81,7 @@
                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                </rowConstraints>
                <children>
-                  <Text text="Palūkanos %:" textAlignment="CENTER" GridPane.valignment="BOTTOM">
+                  <Text text="Palūkanos %: *" textAlignment="CENTER" GridPane.valignment="BOTTOM">
                      <GridPane.margin>
                         <Insets bottom="5.0" left="5.0" />
                      </GridPane.margin>
@@ -100,7 +100,7 @@
                     <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
                 </rowConstraints>
                 <children>
-                    <Text text="Paskolos grąžinimo būdas:" textAlignment="CENTER" GridPane.valignment="BOTTOM">
+                    <Text text="Paskolos grąžinimo būdas: *" textAlignment="CENTER" GridPane.valignment="BOTTOM">
                         <GridPane.margin>
                             <Insets bottom="5.0" left="5.0" />
                         </GridPane.margin>
@@ -161,10 +161,10 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Text text="Atidėjimo palūkanos %:" textAlignment="CENTER" />
+                        <Text text="Atidėjimo palūkanos %: *" textAlignment="CENTER" />
                         <TextField fx:id="delayInterest" GridPane.columnIndex="1" GridPane.valignment="BOTTOM" />
-                        <Text text="Pradžios mėnesis:" textAlignment="CENTER" GridPane.rowIndex="1" />
-                        <Text text="Pabaigos mėnesis:" textAlignment="CENTER" GridPane.rowIndex="2" />
+                        <Text text="Pradžios mėnesis: *" textAlignment="CENTER" GridPane.rowIndex="1" />
+                        <Text text="Pabaigos mėnesis: *" textAlignment="CENTER" GridPane.rowIndex="2" />
                         <TextField fx:id="delayBegin" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM" />
                         <TextField fx:id="delayEnd" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
                      </children>
