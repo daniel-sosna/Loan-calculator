@@ -1,4 +1,4 @@
-module com.example.loan_calculator {
+module lt.vu.loan_calculator {
     requires javafx.controls;
     requires javafx.fxml;
 

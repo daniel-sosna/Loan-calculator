@@ -2,6 +2,22 @@
 
 The **Loan Calculator** is a JavaFX-based application designed to calculate and visualize loan repayment schedules. It supports different loan repayment types, including annuity and linear schedules, and provides features such as payment gap handling and comparison between repayment types.
 
+## Table of Contents
+- [Features](#features)
+- [Project Structure](#project-structure)
+  - [1. `lt.vu.loan_calculator.calc`](#1-ltvuloan_calculatorcalc)
+  - [2. `lt.vu.loan_calculator.gui`](#2-ltvuloan_calculatorgui)
+- [FXML Files](#fxml-files)
+- [How to Run](#how-to-run)
+  - [On Windows](#on-windows)
+  - [On macOS/Linux](#on-macoslinux)
+- [Usage](#usage)
+- [GUI Preview](#gui-preview)
+  - [Main Window](#main-window)
+  - [Single Loan Type Selected](#single-loan-type-selected)
+  - [Comparison Mode Selected](#comparison-mode-selected)
+- [Author](#author)
+
 ## Features
 
 - **Loan Repayment Calculation**:
@@ -53,11 +69,59 @@ The GUI layout is defined using FXML files located in the `resources` directory:
 
 ## How to Run
 
-1. Ensure you have Java 17 or later installed.
-2. Clone the repository and navigate to the project directory.
-3. Open the project in your preferred IDE (e.g., IntelliJ IDEA or Visual Studio Code).
-4. Build the project using your IDE's build tools.
-5. Run the application by executing the `MainApplication` class.
+### On Windows
+
+1. Ensure you have **Java 17** or later installed.
+   - You can verify it by running:
+     ```cmd
+     java -version
+     ```
+2. Set environment variable `JAVA_HOME` to point to your Java JDK installation:
+   ```cmd
+   SET JAVA_HOME=C:\path\to\JDKxx
+   ```
+   - Verify it is set correctly:
+     ```cmd
+     echo %JAVA_HOME%
+     ```
+3. Clone the repository and navigate to the project directory.
+   ```cmd
+   git clone <repository-url>
+   cd "Loan Calculator"
+   ```
+4. Run the application using one of the following methods:
+   - **From your preferred IDE**: Execute the `MainApplication` class.
+   - **Using Maven configuration**: Run the following command in the terminal:
+     ```cmd
+     mvnw.cmd clean javafx:run
+     ```
+
+### On macOS/Linux
+
+1. Ensure you have **Java 17** or later installed.
+    - You can verify it by running:
+      ```bash
+      java -version
+      ```
+2. Set environment variable `JAVA_HOME` to point to your Java JDK installation:
+   ```bash
+   export JAVA_HOME="/path/to/JDKxx"
+   ```
+   - Verify it is set correctly:
+     ```bash
+     echo $JAVA_HOME
+     ```
+3. Clone the repository and navigate to the project directory.
+   ```bash
+   git clone <repository-url>
+   cd "Loan Calculator"
+   ```
+4. Run the application using one of the following methods:
+    - **From your preferred IDE**: Execute the `MainApplication` class.
+    - **Using Maven configuration**: Run the following command in the terminal:
+      ```bash
+      ./mvnw clean javafx:run
+      ```
 
 ## Usage
 
@@ -77,6 +141,25 @@ The GUI layout is defined using FXML files located in the `resources` directory:
    - In a chart format for visual representation.
 7. Export the repayment schedule to a CSV file if needed.
 
+## GUI Preview
+
+### Main Window
+
+<img src="https://raw.githubusercontent.com/daniel-sosna/Loan-calculator/docs-screenshots/data/screenshots/main_blank.jpg" alt="Blank main window" height="400"/>
+
+### Single Loan Type Selected
+
+<img src="https://raw.githubusercontent.com/daniel-sosna/Loan-calculator/docs-screenshots/data/screenshots/main_filled_annuity.jpg" alt="Filled main window (annuity selected)" height="400"/>
+<img src="https://raw.githubusercontent.com/daniel-sosna/Loan-calculator/docs-screenshots/data/screenshots/annuity_table.jpg" alt="Results table (annuity)" height="400"/>
+<img src="https://raw.githubusercontent.com/daniel-sosna/Loan-calculator/docs-screenshots/data/screenshots/annuity_chart.jpg" alt="Results chart (annuity)" height="300"/>
+
+### Comparison Mode Selected
+
+<img src="https://raw.githubusercontent.com/daniel-sosna/Loan-calculator/docs-screenshots/data/screenshots/main_filled_compare.jpg" alt="Filled main window (compare selected)" height="400"/>
+<img src="https://raw.githubusercontent.com/daniel-sosna/Loan-calculator/docs-screenshots/data/screenshots/compare_table_annuity.jpg" alt="Results table (annuity)" height="400"/>
+<img src="https://raw.githubusercontent.com/daniel-sosna/Loan-calculator/docs-screenshots/data/screenshots/compare_table_linear.jpg" alt="Results table (linear)" height="400"/>
+<img src="https://raw.githubusercontent.com/daniel-sosna/Loan-calculator/docs-screenshots/data/screenshots/compare_chart.jpg" alt="Results chart (compare)" height="300"/>
+
 ## Author
 
-Daniel Sosna
+Daniel Sosna – Vilnius University student.
